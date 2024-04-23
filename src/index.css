@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.input-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  margin-right: 20px;
+  background-color: #999; 
+  display: none;
+  color: #333; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 7px;
+  transition: ease-in .2s;
+}
+
+.input-file:hover {
+  background-color: #e0e0e0;
+}
+
+.input-file:focus {
+  outline: none; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+.input-file::placeholder {
+  color: #999; 
+}
+
+.input-file::-webkit-file-upload-button {
+  display: none;
+}
+
+.label-for-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: fit-content;
+  transition: ease-in-out .3s;
+}
+
+.label-for-input:hover {
+  opacity: .5;
+}
